@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: auto;
+}
+
+.animated-logo {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  transform-origin: 50% 50%;
+  image-rendering: crisp-edges;
+  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  transition: opacity 0.1s ease-out;
+}
